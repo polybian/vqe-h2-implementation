@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Qiskit / PySCF
+.qiskit/
+*.qpy
+*.chk
+*.h5
+
+# OS
+.DS_Store
