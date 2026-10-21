@@ -5,6 +5,7 @@ molecule — the "hello world" of quantum chemistry — built with Qiskit,
 SciPy, and PySCF. No black-box VQE routine: the ansatz, the expectation
 values, and the optimization loop are all explicit.
 
+This is #17 in my portfolio and #3 in my quantum series.
 I love molecular engineering, and above all QUANTUM.
 
 ## The three implementations
