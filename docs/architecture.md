@@ -25,8 +25,7 @@ vqe-h2-implementation/
 │   └── 03_dissociation_curve.py  # FCI/STO-3G energies vs bond length
 │                              # (exact diagonalization, PySCF integrals)
 ├── docs/
-│   ├── architecture.md        # this file
-│   └── interview-answers.md
+│   └── architecture.md        # this file
 └── simplified-explanation.md  # plain-language guide (Spanish)
 ```
 
