@@ -71,13 +71,6 @@ states, a classical optimizer steers. H2 is where every quantum
 chemistry method gets debugged first, because it's the smallest
 molecule with electron correlation and we know its exact answer.
 
-## Interview Q&A
-
-[docs/interview-answers.md](docs/interview-answers.md) — what VQE is,
-why the variational principle matters, what parity mapping and
-tapering do, simulator vs hardware, and what comes next (LiH, noisy
-simulation, UCCSD).
-
 ## Plain-language guide
 
 [simplified-explanation.md](simplified-explanation.md) — VQE and the
