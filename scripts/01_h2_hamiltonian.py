@@ -1,8 +1,8 @@
 """
-01 — The H2 Hamiltonian: from Pauli coefficients to the exact answer.
+01 - The H2 Hamiltonian: from Pauli coefficients to the exact answer.
 
 Builds the 2-qubit H2 Hamiltonian (STO-3G basis, equilibrium bond length
-R = 0.735 Å) from its literature Pauli coefficients — the parity-mapped
+R = 0.735 Å) from its literature Pauli coefficients - the parity-mapped
 Hamiltonian with two-qubit reduction:
 
     H = -0.4804·II + 0.3935·ZI − 0.3935·IZ − 0.0113·ZZ + 0.1812·XX
@@ -51,7 +51,7 @@ def main() -> None:
 
     assert abs(e0 - H2_FCI_LITERATURE_HA) < 0.005, \
         "Hamiltonian does not match the published H2 FCI energy!"
-    print("\nOK — the Pauli Hamiltonian reproduces the published H2 "
+    print("\nOK - the Pauli Hamiltonian reproduces the published H2 "
           "ground-state energy.")
 
 

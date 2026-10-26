@@ -10,13 +10,13 @@ else
   PY="python3"
 fi
 
-echo "=== 01 — H2 Hamiltonian and exact ground state ==="
+echo "=== 01 - H2 Hamiltonian and exact ground state ==="
 $PY scripts/01_h2_hamiltonian.py
 echo
-echo "=== 02 — VQE ground state ==="
+echo "=== 02 - VQE ground state ==="
 $PY scripts/02_vqe_ground_state.py
 echo
-echo "=== 03 — Dissociation curve ==="
+echo "=== 03 - Dissociation curve ==="
 $PY scripts/03_dissociation_curve.py
 echo
 echo "All three implementations completed successfully."

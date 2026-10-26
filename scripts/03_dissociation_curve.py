@@ -1,5 +1,5 @@
 """
-03 — The H2 dissociation curve: mapping the molecule's energy landscape.
+03 - The H2 dissociation curve: mapping the molecule's energy landscape.
 
 For each bond length R from 0.4 to 2.5 Å this implementation:
 
@@ -10,7 +10,7 @@ For each bond length R from 0.4 to 2.5 Å this implementation:
   3. Diagonalizes it EXACTLY (full CI in the STO-3G basis).
 
 The energies below are therefore exact diagonalization results, not
-VQE approximations — labeled honestly. The curve must show a minimum
+VQE approximations - labeled honestly. The curve must show a minimum
 near the equilibrium bond length (~0.74 Å): stretched or compressed,
 the molecule is less bound.
 
@@ -77,8 +77,8 @@ def main() -> None:
     assert 0.6 <= r_min <= 0.9, \
         f"Minimum at {r_min:.2f} Å is far from the known 0.74 Å!"
     assert e_min < es[0] and e_min < es[-1], \
-        "Curve has no interior minimum — unphysical!"
-    print("\nOK — the dissociation curve bottoms out at the equilibrium "
+        "Curve has no interior minimum - unphysical!"
+    print("\nOK - the dissociation curve bottoms out at the equilibrium "
           "bond length, as quantum chemistry demands.")
 
 

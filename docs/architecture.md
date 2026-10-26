@@ -3,7 +3,7 @@
 ## What this implementation is
 
 A from-scratch Variational Quantum Eigensolver (VQE) for the hydrogen
-molecule — the "hello world" of quantum chemistry — built with Qiskit,
+molecule (the "hello world" of quantum chemistry) built with Qiskit,
 SciPy, and PySCF. No black-box VQE routine: the ansatz, the expectation
 values, and the optimization loop are all explicit.
 
@@ -43,7 +43,7 @@ vqe-h2-implementation/
         │               (scripts 01, 03)             (script 02)
 ```
 
-## Script 01 — the Hamiltonian
+## Script 01: the Hamiltonian
 
 The 2-qubit H2 Hamiltonian at R = 0.735 Å, parity mapping with
 two-qubit reduction (particle-number and spin Z2 symmetries):
@@ -55,7 +55,7 @@ parity mapping → numerical tapering), not copied: the II term carries
 the nuclear repulsion energy. Diagonalizing gives −1.137305 Ha,
 matching the published FCI/STO-3G value (−1.1373 Ha) to 0.01 mHa.
 
-## Script 02 — the VQE
+## Script 02: the VQE
 
 - **Ansatz** (hardware-efficient): Ry(θ₀)⊗Ry(θ₁) → CNOT(0,1) →
   Ry(θ₂)⊗Ry(θ₃). Four parameters, one entangling layer.
@@ -67,12 +67,12 @@ matching the published FCI/STO-3G value (−1.1373 Ha) to 0.01 mHa.
   checks the VQE energy never drops below the exact value and lands
   within 2% of it.
 
-## Script 03 — the dissociation curve
+## Script 03: the dissociation curve
 
 For each bond length, PySCF recomputes the RHF/STO-3G integrals, the
 shared core rebuilds the parity-mapped Hamiltonian, and exact
 diagonalization gives the FCI energy. These points are **exact
-diagonalization, not VQE** — the honest label matters: VQE is the
+diagonalization, not VQE**, and the label matters: VQE is the
 approximate method being validated, exact diagonalization is the
 yardstick. The curve's minimum must sit at the equilibrium bond
 length (~0.74 Å).
@@ -92,5 +92,5 @@ length (~0.74 Å).
 
 Not a production quantum-chemistry package: STO-3G is a minimal basis,
 there is no error mitigation, and the simulator is noise-free. It is
-a faithful operational model of the VQE loop — the same loop that
+a faithful operational model of the VQE loop: the same loop that
 runs on real hardware, minus the noise.

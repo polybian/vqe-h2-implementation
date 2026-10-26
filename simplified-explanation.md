@@ -14,7 +14,7 @@ puedes predecir si una reacción ocurre, si un material conduce
 electricidad, si una batería funciona.
 
 El problema: calcular esa energía exactamente es brutalmente difícil
-para moléculas grandes — el costo crece exponencialmente. Ahí entra la
+para moléculas grandes, el costo crece exponencialmente. Ahí entra la
 computación cuántica.
 
 > 🧒 *"¿Y por qué el hidrógeno, la molécula más simple?"*
@@ -44,7 +44,7 @@ VQE hace exactamente eso, pero con moléculas:
 
 Hay una garantía hermosa: la física cuántica demuestra que la energía
 que mides **nunca** puede estar por debajo de la verdadera. Es como
-afinar sabiendo que nunca te pasarás de la nota correcta — solo te
+afinar sabiendo que nunca te pasarás de la nota correcta: solo te
 acercas desde arriba. A eso le dicen el **principio variacional**.
 
 > 🧒 *"¿Y las perillas θ qué son?"*
@@ -65,7 +65,7 @@ El proyecto implementa el **mapeo de paridad** desde cero: cada qubit
 guarda si el número de electrones hasta cierto punto es par o impar.
 Y como la molécula conserva el número total de electrones y el de
 "ciertos spines", dos qubits quedan fijos por simetría y se eliminan
-sin aproximación — de 4 qubits a 2. A eso le dicen *tapering*.
+sin aproximación, de 4 qubits a 2. A eso le dicen *tapering*.
 
 El resultado es el Hamiltoniano de 2 qubits del proyecto:
 

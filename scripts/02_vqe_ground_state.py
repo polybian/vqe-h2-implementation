@@ -1,5 +1,5 @@
 """
-02 — VQE from scratch: the variational ground state of H2.
+02 - VQE from scratch: the variational ground state of H2.
 
 Implements the Variational Quantum Eigensolver without a black-box
 VQE routine:
@@ -12,7 +12,7 @@ VQE routine:
     every iteration printed.
 
 The run converges to the exact ground-state energy found in script 01.
-The final assertion requires agreement within 2% — the variational
+The final assertion requires agreement within 2% - the variational
 principle guarantees we can never go *below* the exact value.
 
 Run:
@@ -100,7 +100,7 @@ def main() -> None:
     assert e_vqe >= e_exact - 1e-9, \
         "Variational principle violated: VQE below the exact energy!"
     assert err_pct < 2.0, f"VQE did not converge: {err_pct:.2f}% error"
-    print("\nOK — VQE converged to the H2 ground state within 2% of exact.")
+    print("\nOK - VQE converged to the H2 ground state within 2% of exact.")
 
 
 if __name__ == "__main__":
